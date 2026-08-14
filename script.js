@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = {
                 user_name: formData.get('user_name'),
                 user_email: formData.get('user_email'),
+                user_phone: formData.get('user_phone'),
                 message: formData.get('message')
             };
 

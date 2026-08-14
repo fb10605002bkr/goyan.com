@@ -41,6 +41,7 @@ const translations = {
         
         form_name: "Uw Naam",
         form_email: "Uw E-mailadres",
+        form_phone: "Uw Telefoonnummer",
         form_message: "Uw Bericht",
         form_send: "Verstuur Bericht",
         form_success: "Uw bericht is succesvol verzonden!",
@@ -90,7 +91,8 @@ const translations = {
         contact_desc: "Prêt à réaliser votre projet de rêve ? Contactez-nous dès aujourd'hui !",
         
         form_name: "Votre Nom",
-        form_email: "Votre Adresse E-mail",
+        form_email: "Votre E-mail",
+        form_phone: "Votre Numéro de Téléphone",
         form_message: "Votre Message",
         form_send: "Envoyer le Message",
         form_success: "Votre message a été envoyé avec succès !",
@@ -140,7 +142,8 @@ const translations = {
         contact_desc: "Bereit, Ihr Traumprojekt zu verwirklichen? Kontaktieren Sie uns noch heute!",
         
         form_name: "Ihr Name",
-        form_email: "Ihre E-Mail-Adresse",
+        form_email: "Ihre E-Mail",
+        form_phone: "Ihre Telefonnummer",
         form_message: "Ihre Nachricht",
         form_send: "Nachricht Senden",
         form_success: "Ihre Nachricht wurde erfolgreich gesendet!",

@@ -19,9 +19,9 @@ module.exports = async (req, res) => {
         return res.status(405).json({ error: "Method not allowed" });
     }
 
-    const { user_name, user_email, message } = req.body;
+    const { user_name, user_email, user_phone, message } = req.body;
 
-    if (!user_name || !user_email || !message) {
+    if (!user_name || !user_email || !user_phone || !message) {
         return res.status(400).json({ error: "Lütfen tüm alanları doldurun." });
     }
 
@@ -44,6 +44,7 @@ module.exports = async (req, res) => {
 
 Ad Soyad: ${user_name}
 E-posta: ${user_email}
+Telefon: ${user_phone}
 
 Mesaj:
 ${message}`
