@@ -333,35 +333,64 @@ ul {
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-/* --- Language Selector --- */
+/* --- Language Selector Custom --- */
 .lang-selector {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-gold);
-    font-size: 1.3rem;
-    width: 30px;
-    height: 30px;
 }
 
-.lang-selector i {
-    pointer-events: none; /* Allow clicks to pass to the select */
-}
-
-.lang-selector select {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0; /* completely hides the white box and arrow, but keeps it clickable */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
 }
 
-.lang-selector select option {
-    background-color: var(--bg-dark);
+.lang-globe {
+    font-size: 1.3rem;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.lang-globe:hover {
     color: var(--text-primary);
+}
+
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bg-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-gold);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 60px;
+    text-align: center;
+}
+
+.lang-dropdown:hover .lang-menu,
+.lang-menu.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.lang-menu span {
+    padding: 10px;
+    color: var(--text-primary);
+    transition: background 0.3s;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+}
+
+.lang-menu span:hover {
+    background-color: var(--primary-gold);
+    color: var(--bg-dark);
 }
 
 .service-icon {

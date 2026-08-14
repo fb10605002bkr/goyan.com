@@ -66,13 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Language Switching Logic
-    const langSwitch = document.getElementById('lang-switch');
+    const langOptions = document.querySelectorAll('.lang-option');
     
     // Check local storage for saved language, default to 'nl'
     let currentLang = localStorage.getItem('goyan_lang') || 'nl';
-    if(langSwitch) {
-        langSwitch.value = currentLang;
-    }
 
     function applyTranslations(lang) {
         if (typeof translations === 'undefined' || !translations[lang]) return;
@@ -87,13 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply translations on initial load
     applyTranslations(currentLang);
 
-    if(langSwitch) {
-        langSwitch.addEventListener('change', (e) => {
-            const newLang = e.target.value;
+    langOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+            const newLang = e.target.getAttribute('data-lang');
             localStorage.setItem('goyan_lang', newLang);
             applyTranslations(newLang);
         });
-    }
+    });
 
     // --- Dynamic Projects Loader ---
     const projectsGrid = document.getElementById('frontend-projects-grid');
