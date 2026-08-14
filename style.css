@@ -335,21 +335,31 @@ ul {
 
 /* --- Language Selector --- */
 .lang-selector {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
     color: var(--primary-gold);
+    font-size: 1.3rem;
+    width: 30px;
+    height: 30px;
+}
+
+.lang-selector i {
+    pointer-events: none; /* Allow clicks to pass to the select */
 }
 
 .lang-selector select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: transparent;
     border: none;
-    color: var(--text-primary);
-    font-size: 1rem;
+    color: transparent;
     cursor: pointer;
     outline: none;
-    font-family: inherit;
-    font-weight: 500;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -358,11 +368,6 @@ ul {
 .lang-selector select option {
     background-color: var(--bg-dark);
     color: var(--text-primary);
-}
-
-.lang-selector select:hover,
-.lang-selector select:focus {
-    color: var(--primary-gold);
 }
 
 .service-icon {
