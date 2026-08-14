@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyan Grup - Diensten</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Night Sky Background -->
+    <div id="night-sky-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="gold-text">GOYAN</span><span class="silver-text">GRUP</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="diensten.html" style="color: var(--primary-gold);" data-i18n="nav_services">Diensten</a></li>
+                <li><a href="waarom-ons.html" data-i18n="nav_why_us">Waarom Ons</a></li>
+                <li><a href="projecten.html" data-i18n="nav_projects">Projecten</a></li>
+                <li><a href="contact.html" class="btn-primary" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-selector">
+                    <select id="lang-switch">
+                        <option value="nl">NL</option>
+                        <option value="fr">FR</option>
+                        <option value="de">DE</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="diensten" class="services" style="padding-top: 150px; min-height: 100vh;">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Onze <span class="gold-text">Diensten</span></h2>
+            <div class="services-grid">
+                
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building-circle-arrow-right"></i>
+                    </div>
+                    <h3 data-i18n="service_1_title">BOUW & CONSTRUCTIE</h3>
+                    <p data-i18n="service_1_desc">Kwaliteitsvolle bouw en constructie voor elk project.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 data-i18n="service_2_title">WERKNEMERSVERHUUR</h3>
+                    <p data-i18n="service_2_desc">Betrouwbare en flexibele arbeidskrachten voor elke sector.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-i18n="service_3_title">PROJECTBEHEER</h3>
+                    <p data-i18n="service_3_desc">Efficiënte planning en begeleiding van A tot Z.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h2><span class="gold-text">GOYAN</span> <span class="silver-text">GRUP</span></h2>
+                <p>Excellence in construction and management.</p>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer_contact_title">Contact</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+32470695365" style="color: inherit; text-decoration: none;">+32 470 69 53 65</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:dvoltaj@gmail.com" style="color: inherit; text-decoration: none;">dvoltaj@gmail.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Brussel, België</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2024 Goyan Grup. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

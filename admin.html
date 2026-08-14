@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyan Grup - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="login-section" class="admin-card">
+            <div class="admin-header">
+                <h2><span class="gold-text">GOYAN</span> <span class="silver-text">ADMIN</span></h2>
+                <p>Log in om de website te beheren</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="admin-email" required placeholder="admin@goyangrup.be">
+                </div>
+                <div class="form-group">
+                    <label>Wachtwoord (Şifre)</label>
+                    <input type="password" id="admin-password" required placeholder="********">
+                </div>
+                <p id="login-error" class="error-msg"></p>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none;">Inloggen (Giriş Yap)</button>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" class="admin-dashboard" style="display: none;">
+            <div class="dashboard-header">
+                <h2>Projecten <span class="gold-text">Beheer</span></h2>
+                <button id="logout-btn" class="btn-secondary"><i class="fa-solid fa-right-from-bracket"></i> Uitloggen (Çıkış)</button>
+            </div>
+
+            <div class="dashboard-content">
+                <!-- Add New Project Form -->
+                <div class="admin-card add-project-card">
+                    <h3>Nieuw Project Toevoegen (Yeni Proje Ekle)</h3>
+                    <form id="add-project-form">
+                        <div class="form-group">
+                            <label>Titel (Başlık)</label>
+                            <input type="text" id="project-title" required placeholder="bijv. Renovatie Herenhuis">
+                        </div>
+                        <div class="form-group">
+                            <label>Beschrijving (Açıklama)</label>
+                            <textarea id="project-desc" rows="3" required placeholder="Kısa proje açıklaması..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Icoon (İkon) - FontAwesome Sınıfı</label>
+                            <input type="text" id="project-icon" placeholder="fa-solid fa-house" value="fa-solid fa-house-chimney-crack">
+                        </div>
+                        <button type="submit" class="btn-primary" style="border: none;">Project Toevoegen (Ekle)</button>
+                    </form>
+                </div>
+
+                <!-- Existing Projects List -->
+                <div class="admin-card projects-list-card">
+                    <h3>Bestaande Projecten (Mevcut Projeler)</h3>
+                    <div id="admin-projects-list" class="admin-projects-grid">
+                        <p>Projecten worden geladen... (Projeler yükleniyor...)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (Modular) -->
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

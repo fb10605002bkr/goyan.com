@@ -1,0 +1,152 @@
+const translations = {
+    nl: {
+        nav_home: "Home",
+        nav_services: "Diensten",
+        nav_why_us: "Waarom Ons",
+        nav_projects: "Projecten",
+        nav_contact: "Contact",
+        
+        hero_title: "Uw Partner in <span class='gold-text'>Bouw</span> en <span class='gold-text'>Projectbeheer</span>",
+        hero_subtitle: "Kwaliteitsvolle constructie, betrouwbare arbeidskrachten en efficiënte begeleiding van A tot Z.",
+        hero_btn: "Ontdek Onze Diensten",
+        
+        services_title: "Onze <span class='gold-text'>Diensten</span>",
+        service_1_title: "BOUW & CONSTRUCTIE",
+        service_1_desc: "Kwaliteitsvolle bouw en constructie voor elk project.",
+        service_2_title: "WERKNEMERSVERHUUR",
+        service_2_desc: "Betrouwbare en flexibele arbeidskrachten voor elke sector.",
+        service_3_title: "PROJECTBEHEER",
+        service_3_desc: "Efficiënte planning en begeleiding van A tot Z.",
+        
+        features_title: "Waarom Kiezen Voor <span class='gold-text'>Goyan Grup</span>?",
+        feature_1_title: "KWALITEIT & VERTROUWEN",
+        feature_1_desc: "Uw project in veilige handen.",
+        feature_2_title: "ERVAREN TEAM",
+        feature_2_desc: "Vakmensen met expertise.",
+        feature_3_title: "FLEXIBELE OPLOSSINGEN",
+        feature_3_desc: "Oplossingen op maat van uw behoeften.",
+        feature_4_title: "ACTIEF IN HEEL BELGIË",
+        feature_4_desc: "Overal waar u ons nodig heeft.",
+
+        projects_title: "Onze <span class='gold-text'>Projecten</span>",
+        project_1_title: "Renovatie Herenhuis",
+        project_1_desc: "Volledige renovatie van een historisch pand in Brussel.",
+        project_2_title: "Nieuwbouw Appartementen",
+        project_2_desc: "Constructie van 12 moderne appartementen in Antwerpen.",
+        project_3_title: "Kantoorrenovatie",
+        project_3_desc: "Transformatie van een oude fabriek tot moderne kantoorruimte.",
+
+        contact_title: "Neem <span class='gold-text'>Contact</span> Op",
+        contact_desc: "Klaar om uw droomproject te realiseren? Neem vandaag nog contact met ons op!",
+        
+        form_name: "Uw Naam",
+        form_email: "Uw E-mailadres",
+        form_message: "Uw Bericht",
+        form_send: "Verstuur Bericht",
+        form_success: "Uw bericht is succesvol verzonden!",
+        form_error: "Er is een fout opgetreden. Probeer het later opnieuw.",
+        
+        footer_contact_title: "Contact",
+        footer_copyright: "&copy; 2024 Goyan Grup. Alle rechten voorbehouden."
+    },
+    fr: {
+        nav_home: "Accueil",
+        nav_services: "Services",
+        nav_why_us: "Pourquoi Nous",
+        nav_projects: "Projets",
+        nav_contact: "Contact",
+        
+        hero_title: "Votre Partenaire en <span class='gold-text'>Construction</span> et <span class='gold-text'>Gestion de Projet</span>",
+        hero_subtitle: "Construction de qualité, main-d'œuvre fiable et accompagnement efficace de A à Z.",
+        hero_btn: "Découvrez Nos Services",
+        
+        services_title: "Nos <span class='gold-text'>Services</span>",
+        service_1_title: "BÂTIMENT & CONSTRUCTION",
+        service_1_desc: "Bâtiment et construction de qualité pour chaque projet.",
+        service_2_title: "LOCATION DE PERSONNEL",
+        service_2_desc: "Main-d'œuvre fiable et flexible pour chaque secteur.",
+        service_3_title: "GESTION DE PROJET",
+        service_3_desc: "Planification et accompagnement efficaces de A à Z.",
+        
+        features_title: "Pourquoi Choisir <span class='gold-text'>Goyan Grup</span>?",
+        feature_1_title: "QUALITÉ & CONFIANCE",
+        feature_1_desc: "Votre projet entre de bonnes mains.",
+        feature_2_title: "ÉQUIPE EXPÉRIMENTÉE",
+        feature_2_desc: "Des professionnels avec de l'expertise.",
+        feature_3_title: "SOLUTIONS FLEXIBLES",
+        feature_3_desc: "Des solutions sur mesure pour vos besoins.",
+        feature_4_title: "ACTIF DANS TOUTE LA BELGIQUE",
+        feature_4_desc: "Partout où vous avez besoin de nous.",
+
+        projects_title: "Nos <span class='gold-text'>Projets</span>",
+        project_1_title: "Rénovation de Maison de Maître",
+        project_1_desc: "Rénovation complète d'un bâtiment historique à Bruxelles.",
+        project_2_title: "Nouveaux Appartements",
+        project_2_desc: "Construction de 12 appartements modernes à Anvers.",
+        project_3_title: "Rénovation de Bureaux",
+        project_3_desc: "Transformation d'une ancienne usine en espace de bureau moderne.",
+
+        contact_title: "<span class='gold-text'>Contactez</span>-nous",
+        contact_desc: "Prêt à réaliser votre projet de rêve ? Contactez-nous dès aujourd'hui !",
+        
+        form_name: "Votre Nom",
+        form_email: "Votre Adresse E-mail",
+        form_message: "Votre Message",
+        form_send: "Envoyer le Message",
+        form_success: "Votre message a été envoyé avec succès !",
+        form_error: "Une erreur s'est produite. Veuillez réessayer plus tard.",
+        
+        footer_contact_title: "Contact",
+        footer_copyright: "&copy; 2024 Goyan Grup. Tous droits réservés."
+    },
+    de: {
+        nav_home: "Startseite",
+        nav_services: "Dienstleistungen",
+        nav_why_us: "Warum Wir",
+        nav_projects: "Projekte",
+        nav_contact: "Kontakt",
+        
+        hero_title: "Ihr Partner für <span class='gold-text'>Bau</span> und <span class='gold-text'>Projektmanagement</span>",
+        hero_subtitle: "Hochwertige Bauausführung, zuverlässige Arbeitskräfte und effiziente Begleitung von A bis Z.",
+        hero_btn: "Entdecken Sie unsere Dienstleistungen",
+        
+        services_title: "Unsere <span class='gold-text'>Dienstleistungen</span>",
+        service_1_title: "BAU & KONSTRUKTION",
+        service_1_desc: "Hochwertiger Bau und Konstruktion für jedes Projekt.",
+        service_2_title: "PERSONALVERMITTLUNG",
+        service_2_desc: "Zuverlässige und flexible Arbeitskräfte für jeden Sektor.",
+        service_3_title: "PROJEKTMANAGEMENT",
+        service_3_desc: "Effiziente Planung und Begleitung von A bis Z.",
+        
+        features_title: "Warum <span class='gold-text'>Goyan Grup</span> Wählen?",
+        feature_1_title: "QUALITÄT & VERTRAUEN",
+        feature_1_desc: "Ihr Projekt in sicheren Händen.",
+        feature_2_title: "ERFAHRENES TEAM",
+        feature_2_desc: "Fachkräfte mit Expertise.",
+        feature_3_title: "FLEXIBLE LÖSUNGEN",
+        feature_3_desc: "Maßgeschneiderte Lösungen für Ihre Bedürfnisse.",
+        feature_4_title: "IN GANZ BELGIEN AKTIV",
+        feature_4_desc: "Überall, wo Sie uns brauchen.",
+
+        projects_title: "Unsere <span class='gold-text'>Projekte</span>",
+        project_1_title: "Herrenhaus-Renovierung",
+        project_1_desc: "Vollständige Renovierung eines historischen Gebäudes in Brüssel.",
+        project_2_title: "Neubau Wohnungen",
+        project_2_desc: "Bau von 12 modernen Wohnungen in Antwerpen.",
+        project_3_title: "Bürorenovierung",
+        project_3_desc: "Umbau einer alten Fabrik in moderne Büroräume.",
+
+        contact_title: "Nehmen Sie <span class='gold-text'>Kontakt</span> auf",
+        contact_desc: "Bereit, Ihr Traumprojekt zu verwirklichen? Kontaktieren Sie uns noch heute!",
+        
+        form_name: "Ihr Name",
+        form_email: "Ihre E-Mail-Adresse",
+        form_message: "Ihre Nachricht",
+        form_send: "Nachricht Senden",
+        form_success: "Ihre Nachricht wurde erfolgreich gesendet!",
+        form_error: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+        
+        footer_contact_title: "Kontakt",
+        footer_copyright: "&copy; 2024 Goyan Grup. Alle Rechte vorbehalten."
+    }
+};

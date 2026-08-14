@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyan Grup - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Night Sky Background -->
+    <div id="night-sky-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <span class="gold-text">GOYAN</span><span class="silver-text">GRUP</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="diensten.html" data-i18n="nav_services">Diensten</a></li>
+                <li><a href="waarom-ons.html" data-i18n="nav_why_us">Waarom Ons</a></li>
+                <li><a href="projecten.html" data-i18n="nav_projects">Projecten</a></li>
+                <li><a href="contact.html" class="btn-primary" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-selector">
+                    <select id="lang-switch">
+                        <option value="nl">NL</option>
+                        <option value="fr">FR</option>
+                        <option value="de">DE</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 150px; align-items: flex-start;">
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="contact_title">Neem <span class="gold-text">Contact</span> Op</h1>
+            <p class="hero-subtitle" data-i18n="contact_desc">Klaar om uw droomproject te realiseren? Neem vandaag nog contact met ons op!</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; width: 100%; max-width: 900px;">
+                <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start; justify-content: center; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); padding: 40px; border-radius: 12px; backdrop-filter: blur(8px);">
+                    <div style="font-size: 1.2rem;"><i class="fa-solid fa-phone gold-text" style="margin-right: 15px;"></i> <a href="tel:+32470695365" style="color: inherit; text-decoration: none;">+32 470 69 53 65</a></div>
+                    <div style="font-size: 1.2rem;"><i class="fa-solid fa-envelope gold-text" style="margin-right: 15px;"></i> <a href="mailto:dvoltaj@gmail.com" style="color: inherit; text-decoration: none;">dvoltaj@gmail.com</a></div>
+                    <div style="font-size: 1.2rem;"><i class="fa-solid fa-location-dot gold-text" style="margin-right: 15px;"></i> Brussel, België</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); padding: 30px; border-radius: 12px; backdrop-filter: blur(8px);">
+                    <form id="contact-form" style="display: flex; flex-direction: column; gap: 15px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label data-i18n="form_name">Uw Naam</label>
+                            <input type="text" name="user_name" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label data-i18n="form_email">Uw E-mailadres</label>
+                            <input type="email" name="user_email" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label data-i18n="form_message">Uw Bericht</label>
+                            <textarea name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="border: none; margin-top: 10px;" data-i18n="form_send">Verstuur Bericht</button>
+                        <p id="form-status" style="margin-top: 10px; font-size: 0.9rem; text-align: center; display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h2><span class="gold-text">GOYAN</span> <span class="silver-text">GRUP</span></h2>
+                <p>Excellence in construction and management.</p>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer_contact_title">Contact</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+32470695365" style="color: inherit; text-decoration: none;">+32 470 69 53 65</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:dvoltaj@gmail.com" style="color: inherit; text-decoration: none;">dvoltaj@gmail.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Brussel, België</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2024 Goyan Grup. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
