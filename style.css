@@ -262,10 +262,7 @@ ul {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: var(--surface-color);
-    backdrop-filter: blur(8px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: transparent;
 }
 
 .section-title {
