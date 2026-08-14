@@ -355,14 +355,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
-    border: none;
-    color: transparent;
+    opacity: 0; /* completely hides the white box and arrow, but keeps it clickable */
     cursor: pointer;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .lang-selector select option {
