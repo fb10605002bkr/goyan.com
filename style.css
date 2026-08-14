@@ -333,6 +333,38 @@ ul {
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
+/* --- Language Selector --- */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-gold);
+}
+
+.lang-selector select {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.lang-selector select option {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.lang-selector select:hover,
+.lang-selector select:focus {
+    color: var(--primary-gold);
+}
+
 .service-icon {
     font-size: 3.5rem;
     margin-bottom: 20px;
